@@ -34,8 +34,9 @@ class Dashboard extends CI_Controller
 
             usort($tweets, "cmp");
             $data['tweets'] = $tweets;
+            $data['show'] = 1;
         }
-        $data['show'] = 1;
+        
         $data['user'] = (array)$this->session->userdata('user');
         $this->load->view('dashboard/index',$data);
 
