@@ -11,6 +11,11 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+
+-- Dumping database structure for darwinlabs
+CREATE DATABASE IF NOT EXISTS `darwinlabs` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `darwinlabs`;
+
 -- Dumping structure for table darwinlabs.users
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
@@ -33,7 +38,7 @@ DELETE FROM `users`;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `username`, `image`, `email`, `password`, `created_at`, `updated_at`, `role`) VALUES
 	(7, 'adasdad', '021c7eedc1202e7d17e747f82d179d1f.jpg', 'hackpuls@gmail.com', '1bd145627ac0ac97933573373fe5bdc1', '2017-07-21 15:54:21', '2017-07-21 15:54:21', 0),
-	(8, 'pulkitpagare', '021c7eedc1202e7d17e747f82d179d1f.jpg', 'pulkit.pagare@valiancesolutions.com', '1bd145627ac0ac97933573373fe5bdc1', '2017-07-21 15:55:34', '2017-07-21 15:55:34', 1),
+	(8, 'pulkitpagare', '021c7eedc1202e7d17e747f82d179d1f.jpg', 'pulkitpagare@gmail.com', '1bd145627ac0ac97933573373fe5bdc1', '2017-07-21 15:55:34', '2017-07-21 15:55:34', 1),
 	(11, 'pulkit', '021c7eedc1202e7d17e747f82d179d1f.jpg', 'pulkit.pagare@gmail.com', '1bd145627ac0ac97933573373fe5bdc1', '2017-07-21 15:55:34', '2017-07-21 15:55:34', 0),
 	(12, 'WJO69GRE4PH', '021c7eedc1202e7d17e747f82d179d1f.jpg', 'sit.amet.consectetuer@luctusutpellentesque.com', '1bd145627ac0ac97933573373fe5bdc1', '2017-07-21 18:10:32', '2017-07-21 18:10:32', 0),
 	(13, 'MAR28OEZ', '021c7eedc1202e7d17e747f82d179d1f.jpg', 'Sed@convallisdolorQuisque.edu', 'asdasd', '2017-07-21 18:10:32', '2017-07-21 18:10:32', 0),
