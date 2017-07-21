@@ -1,0 +1,186 @@
+.ngdialog, .ngdialog-overlay {
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0
+}
+@-webkit-keyframes ngdialog-fadeout {
+0% {
+opacity:1
+}
+100% {
+opacity:0
+}
+}
+@keyframes ngdialog-fadeout {
+0% {
+opacity:1
+}
+100% {
+opacity:0
+}
+}
+@-webkit-keyframes ngdialog-fadein {
+0% {
+opacity:0
+}
+100% {
+opacity:1
+}
+}
+@keyframes ngdialog-fadein {
+0% {
+opacity:0
+}
+100% {
+opacity:1
+}
+}
+.ngdialog {
+	box-sizing:border-box;
+	overflow:auto;
+	-webkit-overflow-scrolling:touch;
+	z-index:10000
+}
+.ngdialog *, .ngdialog :after, .ngdialog :before {
+	box-sizing:inherit
+}
+.ngdialog.ngdialog-disabled-animation, .ngdialog.ngdialog-disabled-animation .ngdialog-content, .ngdialog.ngdialog-disabled-animation .ngdialog-overlay {
+	-webkit-animation:none!important;
+	animation:none!important
+}
+.ngdialog-overlay {
+	background:rgba(0, 0, 0, .4);
+	-webkit-backface-visibility:hidden;
+-webkit-animation:ngdialog-fadein .5s;
+animation:ngdialog-fadein .5s
+}
+.ngdialog-no-overlay {
+	pointer-events:none
+}
+.ngdialog.ngdialog-closing .ngdialog-overlay {
+	-webkit-backface-visibility:hidden;
+-webkit-animation:ngdialog-fadeout .5s;
+animation:ngdialog-fadeout .5s
+}
+.ngdialog-content {
+	background:#fff;
+	-webkit-backface-visibility:hidden;
+-webkit-animation:ngdialog-fadein .5s;
+animation:ngdialog-fadein .5s;
+	pointer-events:all
+}
+.ngdialog.ngdialog-closing .ngdialog-content {
+	-webkit-backface-visibility:hidden;
+-webkit-animation:ngdialog-fadeout .5s;
+animation:ngdialog-fadeout .5s
+}
+.ngdialog-close:before {
+	font-family:Helvetica, Arial, sans-serif;
+	content:'\00D7';
+	cursor:pointer
+}
+body.ngdialog-open, html.ngdialog-open {
+	overflow:hidden
+}
+
+.users-checkbox{
+width: 194px;
+    line-height: 27px;
+    font-weight: normal;	
+}
+
+.top-buffer {
+    margin: 3% 0;
+}
+.padd{padding: 4px 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: capitalize; font-size: 14px;}
+	
+.bg-none{background-image:none !important;}	
+
+a.left.carousel-control.bg-none.icon-left {
+   font-size: 45px;
+    left: -60px;
+    background: #222;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: table-cell;
+    vertical-align: middle;
+    top: 0;
+    line-height: 28px;
+    margin-top: 14%;
+}
+
+a.right.carousel-control.bg-none.icon-right {
+   font-size: 45px;
+    right: -60px;
+    background: #222;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: table-cell;
+    vertical-align: middle;
+    top: 0;
+    line-height: 28px;
+    margin-top: 14%;
+}
+.mg-top {
+    margin: 3% 0 3% 0
+}
+
+.carousel-indicators.bullet-points{ bottom: -45px;}
+.mg-top a.thumbnail {
+    margin-bottom: 0px;}
+	
+.mg-top span {
+    text-align: center;
+    width: 100%;
+    display: block;
+	color: #000; padding-top: 10px;
+}	
+canvas {
+    width: 100%;
+}
+.mg-top .carousel-inner {
+    margin-top: 3%;
+}
+
+.popular-art {
+    /*border-bottom: 1px solid lightgrey;*/
+    width: 225px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 51px;
+}
+
+button.btn.left.carousel-control.bg-none.icon-left {
+ font-size: 45px;
+    left: -50px;
+    background: #000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: table-cell;
+    vertical-align: middle;
+    top: 0;
+    line-height: 28px;
+    top: 30%;
+}
+
+button.btn.right.carousel-control.bg-none.icon-right {
+   font-size: 45px;
+    right: -50px;
+    background: #000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: table-cell;
+    vertical-align: middle;
+    top: 0;
+    line-height: 28px;
+   top:30%;
+}
